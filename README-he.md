@@ -1,45 +1,45 @@
 *[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [Arabic](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [Bengali](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Brazilian Portuguese](https://github.com/donnemartin/system-design-primer/issues/40) ∙ [German](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [Greek](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [Italian](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [Korean](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [Persian](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polish](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [Russian](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Spanish](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [Thai](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Turkish](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [Vietnamese](https://github.com/donnemartin/system-design-primer/issues/127) | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
 
-# The System Design Primer
+# עיצוב מערכות - המדריך למתחיל
 
 <p align="center">
   <img src="http://i.imgur.com/jj3A5N8.png">
   <br/>
 </p>
 
-## Motivation
+## המניע
 
-> Learn how to design large-scale systems.
+> ללמוד כיצד לעצב מערכות בקנה מידה עצום.
 >
-> Prep for the system design interview.
+> להתכונן לראיונות עבודה הכוללים עצוב מערכת.
 
-### Learn how to design large-scale systems
+### ללמוד כיצד לעצב מערכות בקנה מידה עצום
+למידת עיצוב מערכות סְקֵילָבִּילִיוּת (ניתנות לגדילה), תעזור לך להפוך למהנדס טוב יותר.
 
-Learning how to design scalable systems will help you become a better engineer.
+עיצוב מערכות הוא נושא רחב, והרשת מלאה במידע על עקרונות עיצוב מערכות מידע.
 
-System design is a broad topic.  There is a **vast amount of resources scattered throughout the web** on system design principles.
+המאגר הזה, הוא קולקציה מסודרת של משאבים אשר יעזרו לך ללמוד לבנות מערכות אשר יעמדו בגדילה עתידית.
 
-This repo is an **organized collection** of resources to help you learn how to build systems at scale.
+### למד מקהילת הקוד הפתוח
 
-### Learn from the open source community
+גם פרויקט זה הוא קוד פתוח, ומתעדכן במהלך הזמן.
 
-This is a continually updated, open source project.
 
-[Contributions](#contributing) are welcome!
+[תרומה](#contributing) הינה מבורכת!
 
-### Prep for the system design interview
+### הכנה לראיון עיצוב מערכות
 
-In addition to coding interviews, system design is a **required component** of the **technical interview process** at many tech companies.
+מלבד שאלות קוד, עיצוב מערכות הוא חלק אינטגרלי מראיונות עבודה רבים בחברות השונות.
 
-**Practice common system design interview questions** and **compare** your results with **sample solutions**: discussions, code, and diagrams.
+**תרגל שאלות בניית מערכות** והשווה אותם אל הפתרונות המסופקים, הדיאגרמות וקטעי הקוד השונים.
 
-Additional topics for interview prep:
+נושאים נוספים לראיונות עבודה:
 
-* [Study guide](#study-guide)
-* [How to approach a system design interview question](#how-to-approach-a-system-design-interview-question)
-* [System design interview questions, **with solutions**](#system-design-interview-questions-with-solutions)
-* [Object-oriented design interview questions, **with solutions**](#object-oriented-design-interview-questions-with-solutions)
-* [Additional system design interview questions](#additional-system-design-interview-questions)
+* [מדריך לימוד](#study-guide)
+* [איך לגשת אל שאלות עיצוב מערכות](#how-to-approach-a-system-design-interview-question)
+* [שאלות לגבי עיצוב מערכות מראיונות עבודה, **עם פתרונות**](#system-design-interview-questions-with-solutions)
+* [שאלות עבודה לגבי תכנות מונחה עצמים, **עם פתרונות**](#object-oriented-design-interview-questions-with-solutions)
+* [שאלות נוספות לגבי עיצוב מערכות](#additional-system-design-interview-questions)
 
 ## Anki flashcards
 
@@ -84,51 +84,51 @@ Content that needs some polishing is placed [under development](#under-developme
 
 Review the [Contributing Guidelines](CONTRIBUTING.md).
 
-## Index of system design topics
+## תוכן עניינים
 
-> Summaries of various system design topics, including pros and cons.  **Everything is a trade-off**.
+> סיכומים של נושאים שונים בעיצוב המערכת, כולל היתרונות והחסרונות. **הכל ניתן שִׁקְלוּל תְּמוּרוֹת**
 >
-> Each section contains links to more in-depth resources.
+> כל חלק מכיל קישורים למשאבים מעמיקים יותר
 
 <p align="center">
   <img src="http://i.imgur.com/jrUBAF7.png">
   <br/>
 </p>
 
-* [System design topics: start here](#system-design-topics-start-here)
-    * [Step 1: Review the scalability video lecture](#step-1-review-the-scalability-video-lecture)
-    * [Step 2: Review the scalability article](#step-2-review-the-scalability-article)
-    * [Next steps](#next-steps)
-* [Performance vs scalability](#performance-vs-scalability)
-* [Latency vs throughput](#latency-vs-throughput)
-* [Availability vs consistency](#availability-vs-consistency)
+* [עיצוב מערכות: התחל כאן](#system-design-topics-start-here)
+    * [שלב 1: צפה בהרצאה על סְקֵילָבִּילִיוּת ](#step-1-review-the-scalability-video-lecture)
+    * [שלב 2: קרא מאמרים על סְקֵילָבִּילִיוּת ](#step-2-review-the-scalability-article)
+    * [השלב הבא](#next-steps)
+* [ביצועים מול סְקֵילָבִּילִיוּת ](#performance-vs-scalability)
+* [הַשְׁהָיָה מול תפוקה](#latency-vs-throughput)
+* [זמינות מול עִקְבִיּוּת](#availability-vs-consistency)
     * [CAP theorem](#cap-theorem)
         * [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)
         * [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)
-* [Consistency patterns](#consistency-patterns)
-    * [Weak consistency](#weak-consistency)
-    * [Eventual consistency](#eventual-consistency)
-    * [Strong consistency](#strong-consistency)
-* [Availability patterns](#availability-patterns)
-    * [Fail-over](#fail-over)
-    * [Replication](#replication)
+* [דפוסי עקביות](#consistency-patterns)
+    * [עִקְבִיּוּת חלשה](#weak-consistency)
+    * [עִקְבִיּוּת סופית](#eventual-consistency)
+    * [עִקְבִיּוּת חזקה](#strong-consistency)
+* [דפוסי זמינות](#availability-patterns)
+    * [דילוג בעת כשל](#fail-over)
+    * [רפליקציה](#replication)
 * [Domain name system](#domain-name-system)
-* [Content delivery network](#content-delivery-network)
-    * [Push CDNs](#push-cdns)
-    * [Pull CDNs](#pull-cdns)
-* [Load balancer](#load-balancer)
-    * [Active-passive](#active-passive)
-    * [Active-active](#active-active)
-    * [Layer 4 load balancing](#layer-4-load-balancing)
-    * [Layer 7 load balancing](#layer-7-load-balancing)
-    * [Horizontal scaling](#horizontal-scaling)
+* [רשתות העברת תוכן](#content-delivery-network)
+    * [CDNים למשיכה](#push-cdns)
+    * [CDN'ים לדחיפה](#pull-cdns)
+* [מאזן עומסים](#load-balancer)
+    * [פעיל-סביל](#active-passive)
+    * [פעיל-פעיל](#active-active)
+    * [איזון עומסים בשכבה הרביעית](#layer-4-load-balancing)
+    * [איזון עומסים בשכבה השבעית](#layer-7-load-balancing)
+    * [גדילה אופקית](#horizontal-scaling)
 * [Reverse proxy (web server)](#reverse-proxy-web-server)
-    * [Load balancer vs reverse proxy](#load-balancer-vs-reverse-proxy)
-* [Application layer](#application-layer)
-    * [Microservices](#microservices)
+    * [מאזן עומסים vs reverse proxy](#load-balancer-vs-reverse-proxy)
+* [שכבת האפליקציה](#application-layer)
+    * [מיקרוסרביסים](#microservices)
     * [Service discovery](#service-discovery)
-* [Database](#database)
-    * [Relational database management system (RDBMS)](#relational-database-management-system-rdbms)
+* [מסדי נתונים](#database)
+    * [מסדי נתונים רלציונים (RDBMS)](#relational-database-management-system-rdbms)
         * [Master-slave replication](#master-slave-replication)
         * [Master-master replication](#master-master-replication)
         * [Federation](#federation)
@@ -141,7 +141,7 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
         * [Wide column store](#wide-column-store)
         * [Graph Database](#graph-database)
     * [SQL or NoSQL](#sql-or-nosql)
-* [Cache](#cache)
+* [מטמון](#cache)
     * [Client caching](#client-caching)
     * [CDN caching](#cdn-caching)
     * [Web server caching](#web-server-caching)
