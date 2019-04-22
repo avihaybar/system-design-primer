@@ -1,5 +1,7 @@
 *[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [Arabic](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [Bengali](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Brazilian Portuguese](https://github.com/donnemartin/system-design-primer/issues/40) ∙ [German](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [Greek](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [Italian](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [Korean](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [Persian](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polish](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [Russian](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Spanish](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [Thai](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Turkish](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [Vietnamese](https://github.com/donnemartin/system-design-primer/issues/127) | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
 
+> נכתב בלשון זכר אך מיועד לשני המינים 
+
 # עיצוב מערכות - המדריך למתחיל
 
 <p align="center">
@@ -27,7 +29,7 @@
 
 [תרומה](#contributing) הינה מבורכת!
 
-### הכנה לראיון עיצוב מערכות
+### הכנה לראיון עבודה הכולל עיצוב מערכות
 
 מלבד שאלות קוד, עיצוב מערכות הוא חלק אינטגרלי מראיונות עבודה רבים בחברות השונות.
 
@@ -86,7 +88,7 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
 
 ## תוכן עניינים
 
-> סיכומים של נושאים שונים בעיצוב המערכת, כולל היתרונות והחסרונות. **הכל ניתן שִׁקְלוּל תְּמוּרוֹת**
+> סיכומים של נושאים שונים בעיצוב המערכת, כולל היתרונות והחסרונות.
 >
 > כל חלק מכיל קישורים למשאבים מעמיקים יותר
 
@@ -99,34 +101,34 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
     * [שלב 1: צפה בהרצאה על סְקֵילָבִּילִיוּת ](#step-1-review-the-scalability-video-lecture)
     * [שלב 2: קרא מאמרים על סְקֵילָבִּילִיוּת ](#step-2-review-the-scalability-article)
     * [השלב הבא](#next-steps)
-* [ביצועים מול סְקֵילָבִּילִיוּת ](#performance-vs-scalability)
-* [הַשְׁהָיָה מול תפוקה](#latency-vs-throughput)
-* [זמינות מול עִקְבִיּוּת](#availability-vs-consistency)
+* [ביצועים מול סְקֵילָבִּילִיוּת](#performance-vs-scalability)
+* [Latency מול throughput](#latency-vs-throughput)
+* [זמינות מול עקביות](#availability-vs-consistency)
     * [CAP theorem](#cap-theorem)
         * [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)
         * [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)
-* [דפוסי עקביות](#consistency-patterns)
-    * [עִקְבִיּוּת חלשה](#weak-consistency)
-    * [עִקְבִיּוּת סופית](#eventual-consistency)
-    * [עִקְבִיּוּת חזקה](#strong-consistency)
-* [דפוסי זמינות](#availability-patterns)
-    * [דילוג בעת כשל](#fail-over)
-    * [רפליקציה](#replication)
+* [שבלונות עקביות](#consistency-patterns)
+    * [Weak consistency](#weak-consistency)
+    * [Eventual consistency](#eventual-consistency)
+    * [Strong consistency](#strong-consistency)
+* [שבלונות זמינות](#availability-patterns)
+    * [Fail-over](#fail-over)
+    * [Replication](#replication)
 * [Domain name system](#domain-name-system)
-* [רשתות העברת תוכן](#content-delivery-network)
-    * [CDNים למשיכה](#push-cdns)
-    * [CDN'ים לדחיפה](#pull-cdns)
-* [מאזן עומסים](#load-balancer)
-    * [פעיל-סביל](#active-passive)
-    * [פעיל-פעיל](#active-active)
+* [רשתות הפצת תוכן (CDN)](#content-delivery-network)
+    * [Push CDNs](#push-cdns)
+    * [Pull CDNs](#pull-cdns)
+* [איזון עומסים](#load-balancer)
+    * [אקטיבי-פסיבי](#active-passive)
+    * [אקטיבי-אקטיבי](#active-active)
     * [איזון עומסים בשכבה הרביעית](#layer-4-load-balancing)
     * [איזון עומסים בשכבה השבעית](#layer-7-load-balancing)
     * [גדילה אופקית](#horizontal-scaling)
-* [Reverse proxy (web server)](#reverse-proxy-web-server)
-    * [מאזן עומסים vs reverse proxy](#load-balancer-vs-reverse-proxy)
+* [Reverse proxy (שרתי ווב)](#reverse-proxy-web-server)
+    * [Load balancer vs reverse proxy](#load-balancer-vs-reverse-proxy)
 * [שכבת האפליקציה](#application-layer)
-    * [מיקרוסרביסים](#microservices)
-    * [Service discovery](#service-discovery)
+    * [Microservices](#microservices)
+    * [גילוי שירותים](#service-discovery)
 * [מסדי נתונים](#database)
     * [מסדי נתונים רלציונים (RDBMS)](#relational-database-management-system-rdbms)
         * [Master-slave replication](#master-slave-replication)
@@ -141,7 +143,7 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
         * [Wide column store](#wide-column-store)
         * [Graph Database](#graph-database)
     * [SQL or NoSQL](#sql-or-nosql)
-* [מטמון](#cache)
+* [מטמון - קאשינג](#cache)
     * [Client caching](#client-caching)
     * [CDN caching](#cdn-caching)
     * [Web server caching](#web-server-caching)
@@ -154,49 +156,51 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
         * [Write-through](#write-through)
         * [Write-behind (write-back)](#write-behind-write-back)
         * [Refresh-ahead](#refresh-ahead)
-* [Asynchronism](#asynchronism)
-    * [Message queues](#message-queues)
-    * [Task queues](#task-queues)
-    * [Back pressure](#back-pressure)
-* [Communication](#communication)
+* [אסינכרוניות](#asynchronism)
+    * [תורי הודעוצ](#message-queues)
+    * [תורי משימות](#task-queues)
+    * [לחץ אחורי](#back-pressure)
+* [תקשורת](#communication)
     * [Transmission control protocol (TCP)](#transmission-control-protocol-tcp)
     * [User datagram protocol (UDP)](#user-datagram-protocol-udp)
     * [Remote procedure call (RPC)](#remote-procedure-call-rpc)
     * [Representational state transfer (REST)](#representational-state-transfer-rest)
-* [Security](#security)
-* [Appendix](#appendix)
+* [אבטחה](#security)
+* [נספחים](#appendix)
     * [Powers of two table](#powers-of-two-table)
     * [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know)
     * [Additional system design interview questions](#additional-system-design-interview-questions)
     * [Real world architectures](#real-world-architectures)
     * [Company architectures](#company-architectures)
     * [Company engineering blogs](#company-engineering-blogs)
-* [Under development](#under-development)
-* [Credits](#credits)
-* [Contact info](#contact-info)
-* [License](#license)
+* [תחת פיתוח](#under-development)
+* [קרדיטים](#credits)
+* [פרטי קשר](#contact-info)
+* [רשיון](#license)
 
-## Study guide
+## מדריך לימוד
 
-> Suggested topics to review based on your interview timeline (short, medium, long).
+> נושאים מומלצים לקריאה על בסיס פרק הזמן (קצר,בינוני, ארוך)
 
 ![Imgur](http://i.imgur.com/OfVllex.png)
 
-**Q: For interviews, do I need to know everything here?**
+**ש: בשביל ראיונות עבודה, האם אני צריך את כל מה שיש פה?**
 
 **A: No, you don't need to know everything here to prepare for the interview**.
+**ת: לא, אינך צריך את כל מה שיש פה בשביל ראיונות עבודה.**.
 
-What you are asked in an interview depends on variables such as:
 
-* How much experience you have
-* What your technical background is
-* What positions you are interviewing for
-* Which companies you are interviewing with
-* Luck
+מה שאתה נשאל בראיונות עבודה תלוי במשתנים כגון:
 
-More experienced candidates are generally expected to know more about system design.  Architects or team leads might be expected to know more than individual contributors.  Top tech companies are likely to have one or more design interview rounds.
+* כמה נסיון יש לך?
+* מהו הרקע הטכני שלך?
+* לאיזה משרה אתה מתראיין?
+* לאיזו חברה אתה מתראיין?
+* מזל
 
-Start broad and go deeper in a few areas.  It helps to know a little about various key system design topics.  Adjust the following guide based on your timeline, experience, what positions you are interviewing for, and which companies you are interviewing with.
+מועמדים מנוסים יותר צפויים בדרך כלל לדעת יותר על עיצוב מערכות. אדריכלים או ראשי צוותים צפויים לדעת יותר מאשר עובדים "רגילים". חברות טכנולוגיה מובילות עשויות להתמקד יותר בעיצוב מערכות.
+
+התחל ממבט כולל, ולאחר מכן המשך ולמד לעומק בנושאים שונים. שנה את המדריך הזה על בסיס פרק הזמן שלך, הנסיון שלך ולאיזו חברה אתה מתראיין.
 
 * **Short timeline** - Aim for **breadth** with system design topics.  Practice by solving **some** interview questions.
 * **Medium timeline** - Aim for **breadth** and **some depth** with system design topics.  Practice by solving **many** interview questions.
