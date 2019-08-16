@@ -71,24 +71,24 @@ Check out the sister repo [**Interactive Coding Challenges**](https://github.com
 
 * [Coding deck](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
 
-## Contributing
+## תרומה
 
-> Learn from the community.
+> למד מהקהילה.
 
-Feel free to submit pull requests to help:
+אל תהסס להגיש pull requests על מנת לעזור:
 
-* Fix errors
-* Improve sections
-* Add new sections
-* [Translate](https://github.com/donnemartin/system-design-primer/issues/28)
+* תיקון שגיאות
+* שיפור קטעים
+* הוספת קטעים
+* [תרגום](https://github.com/donnemartin/system-design-primer/issues/28)
 
-Content that needs some polishing is placed [under development](#under-development).
+תוכן אשר צריך שיפוץ נמצא תחת [under development](#under-development).
 
-Review the [Contributing Guidelines](CONTRIBUTING.md).
+קרא את [Contributing Guidelines](CONTRIBUTING.md).
 
 ## תוכן עניינים
 
-> סיכומים של נושאים שונים בעיצוב המערכת, כולל היתרונות והחסרונות.
+> סיכומים של נושאים שונים בעיצוב מערכות, כולל היתרונות והחסרונות.
 >
 > כל חלק מכיל קישורים למשאבים מעמיקים יותר
 
@@ -103,15 +103,15 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
     * [השלב הבא](#next-steps)
 * [ביצועים מול סְקֵילָבִּילִיוּת](#performance-vs-scalability)
 * [Latency מול throughput](#latency-vs-throughput)
-* [זמינות מול עקביות](#availability-vs-consistency)
+* [זמינות מול קוֹנְסִיסְטֶנְטִיות](#availability-vs-consistency)
     * [CAP theorem](#cap-theorem)
         * [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)
         * [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)
-* [שבלונות עקביות](#consistency-patterns)
+* [שבלונות קוֹנְסִיסְטֶנְטִיות](#consistency-patterns)
     * [Weak consistency](#weak-consistency)
     * [Eventual consistency](#eventual-consistency)
     * [Strong consistency](#strong-consistency)
-* [שבלונות זמינות](#availability-patterns)
+* [שבלונות קוֹנְסִיסְטֶנְטִיות](#availability-patterns)
     * [Fail-over](#fail-over)
     * [Replication](#replication)
 * [Domain name system](#domain-name-system)
@@ -186,7 +186,6 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
 
 **ש: בשביל ראיונות עבודה, האם אני צריך את כל מה שיש פה?**
 
-**A: No, you don't need to know everything here to prepare for the interview**.
 **ת: לא, אינך צריך את כל מה שיש פה בשביל ראיונות עבודה.**.
 
 
@@ -202,71 +201,73 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
 
 התחל ממבט כולל, ולאחר מכן המשך ולמד לעומק בנושאים שונים. שנה את המדריך הזה על בסיס פרק הזמן שלך, הנסיון שלך ולאיזו חברה אתה מתראיין.
 
-* **Short timeline** - Aim for **breadth** with system design topics.  Practice by solving **some** interview questions.
-* **Medium timeline** - Aim for **breadth** and **some depth** with system design topics.  Practice by solving **many** interview questions.
-* **Long timeline** - Aim for **breadth** and **more depth** with system design topics.  Practice by solving **most** interview questions.
 
-| | Short | Medium | Long |
+* **פרק זמן קצר** -כוון ללמוד **רחב** של עיצוב מערכות, תרגל ע"י פתירת **מעט** שאלות מראיונות עבודה
+* **פרק זמן בינוני** - כוון ללמוד **רחב** של עיצוב מערכות בעל **מעט עומק**, ותרגל ע"י פתירה של **המון** שאלות מראיונות עבודה
+* **פרק זמן ארוך** - כוון ללמוד **רחב** בעל **המון עומק** של עיצוב מערכות, ופתור את **רוב** התרגילים מראיונות העבודה.
+
+
+| | קצר | בינוני | ארוך |
 |---|---|---|---|
-| Read through the [System design topics](#index-of-system-design-topics) to get a broad understanding of how systems work | :+1: | :+1: | :+1: |
-| Read through a few articles in the [Company engineering blogs](#company-engineering-blogs) for the companies you are interviewing with | :+1: | :+1: | :+1: |
-| Read through a few [Real world architectures](#real-world-architectures) | :+1: | :+1: | :+1: |
-| Review [How to approach a system design interview question](#how-to-approach-a-system-design-interview-question) | :+1: | :+1: | :+1: |
-| Work through [System design interview questions with solutions](#system-design-interview-questions-with-solutions) | Some | Many | Most |
-| Work through [Object-oriented design interview questions with solutions](#object-oriented-design-interview-questions-with-solutions) | Some | Many | Most |
-| Review [Additional system design interview questions](#additional-system-design-interview-questions) | Some | Many | Most |
+| קרא את [נושאי עיצוב המערכת](#index-of-system-design-topics), והשג הבנה רחבה כיצד מערכות עובדות | :+1: | :+1: | :+1: |
+| קרא מספר מאמרים מתוך [בלוגים טכנים](#company-engineering-blogs) של החברות אליהם אתה מתראיין | :+1: | :+1: | :+1: |
+|קרא על [ארכיטקטורות בעולם האמיתי](#real-world-architectures) | :+1: | :+1: | :+1: |
+| קרא [כיצד לגשת אל שאלות עיצוב מערכת בראיונות עבודה](#how-to-approach-a-system-design-interview-question) | :+1: | :+1: | :+1: |
+| תרגל באמצעות [שאלות ותשובות בעיצוב מערכות](#system-design-interview-questions-with-solutions) | מעט | הרבה | הרוב |
+| תרגל באמצעות [שאלות ותשובות בתכנות מנוחה עצמים](#object-oriented-design-interview-questions-with-solutions) | מעט| הרבה| הרוב|
+| קרא על [שאלות נוספות בעיצוב מערכות](#additional-system-design-interview-questions) | מעט | הרבה| הרוב|
 
-## How to approach a system design interview question
+## איך לגשת אל שאלות עיצוב מערכת
 
-> How to tackle a system design interview question.
+> כיצד להתמודד עם שאלת ראיונות לעיצוב מערכת.
 
-The system design interview is an **open-ended conversation**.  You are expected to lead it.
+ראיון עבודה הכולל שאלות עיצוב מערכת הוא **שיחה פתוחה**, מצופה ממך להוביל אותו.
 
-You can use the following steps to guide the discussion.  To help solidify this process, work through the [System design interview questions with solutions](#system-design-interview-questions-with-solutions) section using the following steps.
+אתה יכול להשתמש בשלבים הבאים על מנת להוביל את הדיון. על מנת להבין את התהליך הזה, עבוד על השאלות והתשובות בפרק עיצוב המערכת בעזרת השלבים הללו.
 
-### Step 1: Outline use cases, constraints, and assumptions
+### שלב 1: תאר את השימושים, האילוצים וההנחות
 
-Gather requirements and scope the problem.  Ask questions to clarify use cases and constraints.  Discuss assumptions.
+אסוף את הדרישות ואת היקף הבעיה. שאל שאלות על מנת להבהיר את השימוש והאילוצים. דון על הנחות העבודה.
 
-* Who is going to use it?
-* How are they going to use it?
-* How many users are there?
-* What does the system do?
-* What are the inputs and outputs of the system?
-* How much data do we expect to handle?
-* How many requests per second do we expect?
-* What is the expected read to write ratio?
+* מי הולך להשתמש בזה?
+* כיצד הם הולכים להשתמש בזה?
+* מה כמות המשתמשים?
+* מה המערכת עושה?
+* מה המערכת מקבלת ומחזירה?
+* מה כמות הדאטא שהמערכת אמורה לעבד?
+* האם יש צפי לכמות הבקשות לשניה?
+* מה הוא היחס בין הקריאה לכתיבה במערכת?
 
-### Step 2: Create a high level design
+### שלב 2: צור עיצוב על
 
-Outline a high level design with all important components.
+בנה את הארכיטקטורה במבט-על המכילה את כל הרכיבים החשובים.
 
-* Sketch the main components and connections
-* Justify your ideas
+* צייר את הרכיבים המרכזיים ואת החיבורים ביניהם
+* הצדק את הרעיון שלך
 
-### Step 3: Design core components
+### שלב 3: תכנן את הרכיבים המרכזיים
 
-Dive into details for each core component.  For example, if you were asked to [design a url shortening service](solutions/system_design/pastebin/README.md), discuss:
+צלול לפרטי פרטים של כל רכיב מרכזי.  לדוגמא, במידה ואתה מתבקש לתכנן [שירות קיצור כתובות](solutions/system_design/pastebin/README.md), דון על:
 
-* Generating and storing a hash of the full url
-    * [MD5](solutions/system_design/pastebin/README.md) and [Base62](solutions/system_design/pastebin/README.md)
-    * Hash collisions
-    * SQL or NoSQL
-    * Database schema
-* Translating a hashed url to the full url
-    * Database lookup
-* API and object-oriented design
+* יצירה ואחסון של Hash המכיל את כל הכתובות המלאות
+    * [MD5](solutions/system_design/pastebin/README.md) ו-[Base62](solutions/system_design/pastebin/README.md)
+    * התנגשויות ב-Hash
+    * SQL או NoSQL
+    * סכמת מסד הנתונים
+* הפיכת כתובת מקודדת לכתובת אמיתית
+    * שליפת המידע ממסד הנתונים
+* תכנון ה-API ועיצוב
 
-### Step 4: Scale the design
+### שלב 4: הרחב את העיצוב
 
-Identify and address bottlenecks, given the constraints.  For example, do you need the following to address scalability issues?
+זהה וציין את צאוורי הבקבוק, תן את ההסגות לעיצוב. לדוגמא - האם צריך את הקונספטים הבאים על מנת ליצור  סְקֵילָבִּילִיוּת למערכת?
 
-* Load balancer
-* Horizontal scaling
-* Caching
-* Database sharding
+* מאזן עומסים
+* גדילה אופקית
+* מטמון
+* פיצול מסד הנתונים
 
-Discuss potential solutions and trade-offs.  Everything is a trade-off.  Address bottlenecks using [principles of scalable system design](#index-of-system-design-topics).
+דיין על הפתרונות ועל היתרונות והחסרונות של כל אחד.  ציין את צאוורי הבקבוק בעזרת [עקרונות מערכות מבוזרות](#index-of-system-design-topics).
 
 ### Back-of-the-envelope calculations
 
