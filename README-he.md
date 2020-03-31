@@ -73,9 +73,9 @@
 
 * [אוסף כרטיסיות תכנות](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
 
-## תרומה
+## תרומה לפרוייקט
 
-> למד מהקהילה.
+> למד מהקהילה
 
 אל תהסס להגיש pull requests על מנת לעזור:
 
@@ -84,15 +84,16 @@
 * הוספת קטעים
 * [תרגום](https://github.com/donnemartin/system-design-primer/issues/28)
 
-תוכן אשר צריך שיפוץ נמצא תחת [under development](#under-development).
+תוכן אשר צריך שיפוץ נמצא 'תחת פיתוח' [(under development)](#under-development).
 
-קרא את [Contributing Guidelines](CONTRIBUTING.md).
+אנא קרא את ההנחיות לתרומה [(Contributing Guidelines)](CONTRIBUTING.md).
 
 ## תוכן עניינים
 
-> סיכומים של נושאים שונים בעיצוב מערכות, כולל היתרונות והחסרונות.
+> סיכומים של נושאים שונים בעיצוב מערכות, כולל סקירת היתרונות והחסרונות. **כל בחירה דורשת שקלול (טרייד-אוף)**
 >
 > כל חלק מכיל קישורים למשאבים מעמיקים יותר
+
 
 <p align="center">
   <img src="http://i.imgur.com/jrUBAF7.png">
@@ -104,69 +105,70 @@
     * [שלב 2: קרא מאמרים על סְקֵילָבִּילִיוּת ](#step-2-review-the-scalability-article)
     * [השלב הבא](#next-steps)
 * [ביצועים מול סְקֵילָבִּילִיוּת](#performance-vs-scalability)
-* [Latency מול throughput](#latency-vs-throughput)
-* [זמינות מול קוֹנְסִיסְטֶנְטִיות](#availability-vs-consistency)
-    * [CAP theorem](#cap-theorem)
-        * [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)
-        * [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)
-* [שבלונות קוֹנְסִיסְטֶנְטִיות](#consistency-patterns)
-    * [Weak consistency](#weak-consistency)
-    * [Eventual consistency](#eventual-consistency)
-    * [Strong consistency](#strong-consistency)
-* [שבלונות קוֹנְסִיסְטֶנְטִיות](#availability-patterns)
-    * [Fail-over](#fail-over)
-    * [Replication](#replication)
-* [Domain name system](#domain-name-system)
+* [שיהוי (Latency) מול תפוקה (throughput)](#latency-vs-throughput)
+* [זמינות מול עקביות (קוֹנְסִיסְטֶנְטִיות)](#availability-vs-consistency)
+    * [משפט CAP](#cap-theorem)
+        * [CP - עקביות (consistency) וטולרנטיות (partition tolerance)](#cp---consistency-and-partition-tolerance)
+        * [AP - זמינות (availability) וטולרנטיות (partition tolerance)](#ap---availability-and-partition-tolerance)
+* [דפוסי עקביות (consistency-patterns)](#consistency-patterns)
+    * [עקביות חלשה ](#weak-consistency)
+    * [עקביות לא מיידית (Eventual consistency)](#eventual-consistency)
+    * [עקביות חזקה](#strong-consistency)
+* [דפוסי זמינות (availability-patterns)](#availability-patterns)
+    * [גיבוי בזמן כשל (Fail-over)](#fail-over)
+    * [שכפול (Replication)](#replication)
+    * [זמינות במספרים](#availability-in-numbers)
+* [מערכת שמות דומיינים (Domain name system)](#domain-name-system)
 * [רשתות הפצת תוכן (CDN)](#content-delivery-network)
-    * [Push CDNs](#push-cdns)
-    * [Pull CDNs](#pull-cdns)
-* [איזון עומסים](#load-balancer)
+    * [הפצה בדחיפה (Push CDNs)](#push-cdns)
+    * [הפצה במשיכה (Pull CDNs)](#pull-cdns)
+* [מאזן עומסים (load-balancer)](#load-balancer)
     * [אקטיבי-פסיבי](#active-passive)
     * [אקטיבי-אקטיבי](#active-active)
     * [איזון עומסים בשכבה הרביעית](#layer-4-load-balancing)
     * [איזון עומסים בשכבה השבעית](#layer-7-load-balancing)
     * [גדילה אופקית](#horizontal-scaling)
-* [Reverse proxy (שרתי ווב)](#reverse-proxy-web-server)
-    * [Load balancer vs reverse proxy](#load-balancer-vs-reverse-proxy)
+* [פרוקסי 'הפוך' (שרתי ווב)](#reverse-proxy-web-server)
+    * [מאזן-עומסים או פרוקסי](#load-balancer-vs-reverse-proxy)
 * [שכבת האפליקציה](#application-layer)
     * [Microservices](#microservices)
     * [גילוי שירותים](#service-discovery)
 * [מסדי נתונים](#database)
     * [מסדי נתונים רלציונים (RDBMS)](#relational-database-management-system-rdbms)
-        * [Master-slave replication](#master-slave-replication)
-        * [Master-master replication](#master-master-replication)
-        * [Federation](#federation)
-        * [Sharding](#sharding)
-        * [Denormalization](#denormalization)
+        * [שכפול Master-slave](#master-slave-replication)
+        * [שכפול Master-master](#master-master-replication)
+        * [פדרציה (Federation)](#federation)
+        * [רסיסים (Sharding)](#sharding)
+        * [דה-נורמליזציה (Denormalization)](#denormalization)
         * [SQL tuning](#sql-tuning)
     * [NoSQL](#nosql)
-        * [Key-value store](#key-value-store)
-        * [Document store](#document-store)
-        * [Wide column store](#wide-column-store)
-        * [Graph Database](#graph-database)
-    * [SQL or NoSQL](#sql-or-nosql)
-* [מטמון - קאשינג](#cache)
-    * [Client caching](#client-caching)
-    * [CDN caching](#cdn-caching)
-    * [Web server caching](#web-server-caching)
-    * [Database caching](#database-caching)
-    * [Application caching](#application-caching)
-    * [Caching at the database query level](#caching-at-the-database-query-level)
-    * [Caching at the object level](#caching-at-the-object-level)
-    * [When to update the cache](#when-to-update-the-cache)
-        * [Cache-aside](#cache-aside)
-        * [Write-through](#write-through)
-        * [Write-behind (write-back)](#write-behind-write-back)
-        * [Refresh-ahead](#refresh-ahead)
+        * [ אכסון מפתח-ערך (Key-value store)](#key-value-store)
+        * [אחסון מסמכים (Document store)](#document-store)
+        * [אחסון רב-עמודות (Wide column store)](#wide-column-store)
+        * [מסדי נתונים מבוססי גרפים (Graph Database)](#graph-database)
+    * [SQL או NoSQL](#sql-or-nosql)
+* [מטמון (Cache)](#cache)
+    * [מטמון בצד לקוח (Client caching)](#client-caching)
+    * [מטמון ברשת הפצת התוכן (CDN caching)](#cdn-caching)
+    * [מטמון בשרת רשת (Web server caching)](#web-server-caching)
+    * [מטמון במסד נתונים (Database caching)](#database-caching)
+    * [מטמון ברמת האפליקיציה (Application caching)](#application-caching)
+    * [מטמון ברמת שאילתה למסד הנתונים (Caching at the database query level)](#caching-at-the-database-query-level)
+    * [מטמון ברמת האובייקט (Caching at the object level)](#caching-at-the-object-level)
+    * [מתי לעדכן את המטמון?](#when-to-update-the-cache)
+        * [מטמון צד (Cache-aside)](#cache-aside)
+        * [כתיבה במקביל (Write-through)](#write-through)
+        * [כתיבה 'לאחור' (Write-behind / write-back)](#write-behind-write-back)
+        * [רענון מקדים (Refresh-ahead)](#refresh-ahead)
 * [אסינכרוניות](#asynchronism)
-    * [תורי הודעוצ](#message-queues)
-    * [תורי משימות](#task-queues)
-    * [לחץ אחורי](#back-pressure)
+    * [תורי הודעות (message-queues)](#message-queues)
+    * [תורי משימות (task queues)](#task-queues)
+    * [לחץ אחורי (back-pressure)](#back-pressure)
 * [תקשורת](#communication)
-    * [Transmission control protocol (TCP)](#transmission-control-protocol-tcp)
-    * [User datagram protocol (UDP)](#user-datagram-protocol-udp)
-    * [Remote procedure call (RPC)](#remote-procedure-call-rpc)
-    * [Representational state transfer (REST)](#representational-state-transfer-rest)
+    * [פרוטוקול Transmission control protocol - TCP](#transmission-control-protocol-tcp)
+    * [פרוטוקול User datagram protocol - UDP](#user-datagram-protocol-udp)
+    * [הפעלת פרוצדורות מרוחקות (RPC)](#remote-procedure-call-rpc)
+    * [Representational state transfer - REST](#representational-state-transfer-rest)
 * [אבטחה](#security)
 * [נספחים](#appendix)
     * [Powers of two table](#powers-of-two-table)
