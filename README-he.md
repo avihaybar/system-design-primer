@@ -1,75 +1,77 @@
 *[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [Arabic](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [Bengali](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Brazilian Portuguese](https://github.com/donnemartin/system-design-primer/issues/40) ∙ [German](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [Greek](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [Italian](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [Korean](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [Persian](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polish](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [Russian](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Spanish](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [Thai](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Turkish](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [Vietnamese](https://github.com/donnemartin/system-design-primer/issues/127) | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
 
-> נכתב בלשון זכר אך מיועד לשני המינים 
+<div dir="rtl">
+
+> נכתב בלשון זכר אך מיועד לשני המינים
 
 # עיצוב מערכות - המדריך למתחיל
 
 <p align="center">
   <img src="http://i.imgur.com/jj3A5N8.png">
+  
   <br/>
 </p>
 
 ## המניע
 
-> ללמוד כיצד לעצב מערכות בקנה מידה עצום.
->
-> להתכונן לראיונות עבודה הכוללים עצוב מערכת.
+> - ללמוד כיצד לעצב מערכות בקנה מידה עצום.
+> - להתכונן לראיונות עבודה הכוללים עצוב מערכת.
 
-### ללמוד כיצד לעצב מערכות בקנה מידה עצום
-למידת עיצוב מערכות סְקֵילָבִּילִיוּת (ניתנות לגדילה), תעזור לך להפוך למהנדס טוב יותר.
+### למד לעצב מערכות בקנה מידה עצום
+למידת עיצוב מערכות סְקֵילָבִּילִיוּת (ניתנות להרחבה), תעזור לך להפוך למהנדס טוב יותר.
 
-עיצוב מערכות הוא נושא רחב, והרשת מלאה במידע על עקרונות עיצוב מערכות מידע.
+עיצוב מערכות הוא נושא רחב, ומקורות מידע רבים בעקרונות עיצוב המערכות מפוזרים ברחבי הרשת.
 
-המאגר הזה, הוא קולקציה מסודרת של משאבים אשר יעזרו לך ללמוד לבנות מערכות אשר יעמדו בגדילה עתידית.
+מאגר זה, הוא **אוסף מסודר** של משאבים אשר יעזרו לך ללמוד לתכנן ולבנות מערכות בקנה מידה גדול.
 
 ### למד מקהילת הקוד הפתוח
 
-גם פרויקט זה הוא קוד פתוח, ומתעדכן במהלך הזמן.
+פרוייקט זה הוא פרוייקט קוד פתוח, ומתעדכן במהלך הזמן.
 
+כל [תרומה](#contributing) תתקבל בברכה!
 
-[תרומה](#contributing) הינה מבורכת!
+### היה מוכן לראיונות עבודה הכוללים עיצוב מערכות
 
-### הכנה לראיון עבודה הכולל עיצוב מערכות
+מלבד שאלות קוד, עיצוב מערכות הוא **חלק אינטגרלי** מהמקטע הטכני בהליך הגיוס בחברות השונות.
 
-מלבד שאלות קוד, עיצוב מערכות הוא חלק אינטגרלי מראיונות עבודה רבים בחברות השונות.
-
-**תרגל שאלות בניית מערכות** והשווה אותם אל הפתרונות המסופקים, הדיאגרמות וקטעי הקוד השונים.
+**תרגל שאלות נפוצות בעיצוב מערכות** והשווה אותם אל הפתרונות המסופקים, הדיאגרמות וקטעי הקוד השונים.
 
 נושאים נוספים לראיונות עבודה:
 
 * [מדריך לימוד](#study-guide)
 * [איך לגשת אל שאלות עיצוב מערכות](#how-to-approach-a-system-design-interview-question)
-* [שאלות לגבי עיצוב מערכות מראיונות עבודה, **עם פתרונות**](#system-design-interview-questions-with-solutions)
-* [שאלות עבודה לגבי תכנות מונחה עצמים, **עם פתרונות**](#object-oriented-design-interview-questions-with-solutions)
+* [שאלות לגבי עיצוב מערכות מראיונות עבודה, **כולל פתרונות**](#system-design-interview-questions-with-solutions)
+* [שאלות עבודה לגבי תכנות מונחה עצמים, **כולל פתרונות**](#object-oriented-design-interview-questions-with-solutions)
 * [שאלות נוספות לגבי עיצוב מערכות](#additional-system-design-interview-questions)
 
-## Anki flashcards
+## כרטיסיות לימוד בפורמט [אנקי](https://he.wikipedia.org/wiki/אנקי_(תוכנה))
 
 <p align="center">
   <img src="http://i.imgur.com/zdCAkB3.png">
   <br/>
 </p>
 
-The provided [Anki flashcard decks](https://apps.ankiweb.net/) use spaced repetition to help you retain key system design concepts.
 
-* [System design deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
-* [System design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
-* [Object oriented design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
+[כרטיסיות לימוד אנקי](https://apps.ankiweb.net/) הבאות עושות שימוש ב[שינון לסירוגין](https://he.wikipedia.org/wiki/שינון_בסירוגין) על מנת לעזור לך לשמר עקרונות מפתח בעיצוב מערכות.
 
-Great for use while on-the-go.
+* [אוסף כרטיסיות בעיצוב מערכות](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
+* [אוסף כרטיסיות תרגול בעיצוב מערכות](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
+* [אוסף כרטיסיות בתכנות מונחה עצמים](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
 
-### Coding Resource: Interactive Coding Challenges
+מומלצות לשימוש בדרכים
 
-Looking for resources to help you prep for the [**Coding Interview**](https://github.com/donnemartin/interactive-coding-challenges)?
+### תכנות: אתגרי תכנות אינטראקטיביים
+
+מחפש אמצעים שיעזרו לך להתכונן ל[**ראיון עבודה**](https://github.com/donnemartin/interactive-coding-challenges)?
 
 <p align="center">
   <img src="http://i.imgur.com/b4YtAEN.png">
   <br/>
 </p>
 
-Check out the sister repo [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), which contains an additional Anki deck:
+בדוק את המאגר המקביל שלנו ל[**אתגרי תכנות אינטראקטיביים**](https://github.com/donnemartin/interactive-coding-challenges) (טרם תורגם לעברית) המכיל אוספי כרטיסיות נוספים
 
-* [Coding deck](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
+* [אוסף כרטיסיות תכנות](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
 
 ## תרומה
 
@@ -1789,3 +1791,5 @@ My contact info can be found on my [GitHub page](https://github.com/donnemartin)
     Creative Commons Attribution 4.0 International License (CC BY 4.0)
 
     http://creativecommons.org/licenses/by/4.0/
+
+</div>
